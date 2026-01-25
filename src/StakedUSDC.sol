@@ -9,15 +9,13 @@
 
 pragma solidity ^0.8.18;
 
-// imports
 import {ERC4626} from "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC4626.sol";
-import {AccessControl} from "lib/openzeppelin-contracts/contracts/access/AccessControl.sol";
+import {ERC20} from "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
 import {IERC20} from "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol";
 import {ReentrancyGuard} from "lib/openzeppelin-contracts/contracts/utils/ReentrancyGuard.sol";
 import {SafeERC20} from "lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol";
-import {IProtocolAdapter} from "./Adapters/IProtocolAdapter.sol";
 
-contract StakedUSDC is ERC4626, AccessControl, ReentrancyGuard{
+contract StakedUSDC is ERC4626, ReentrancyGuard {
     using SafeERC20 for IERC20;
 
     uint256 private constant BPS = 10_000;
