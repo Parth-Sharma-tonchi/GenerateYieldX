@@ -2,9 +2,9 @@
 
 // Disclaimer
 
-/** @dev This contract is for Assignment, not a production ready code. It may have bugs.
+/** @dev This contract is freelance project which i am doing, not a production ready code because we are working on it. It may have bugs.
     This contract doesn't use upgradablity functionalities which are important for a vault contract, 
-    but not included in the scope of assignment.
+    but not included in the scope of project.
 */ 
 
 pragma solidity ^0.8.18;
